@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="video.html">vid</a>
+        <a href="pro.html">pro</a>
+    </div>
+
+    <video controls>
+        <source src="VID-20240729-WA0016.mp4">
+    </video>
+    <h1>upload a video</h1>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="videoFile">choose a video:</label>
+        <input type="file" name="videoFile" id="videoFile" accept="video/*" required>
+        <br><br>
+        <input type="submit" value="upload video">
+    </form>
+
+</body>
+
+</html>
